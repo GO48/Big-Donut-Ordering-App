@@ -14,12 +14,12 @@ I build it from scratch and use all the tricks and great practice. This is so fa
 - [x] Store current cart in localStorage.
 ### 2.0
 - [] discount code tab, copy to clipboard button
-- [] order history tab, store in localStorage
+- [] order history tab, show data in localStorage
 - [] Firebase Database
 
 ## bugs
--[x] event target with icon can't work properly. Solved by removing pointer events inside clickable elements to preventing icons from becoming the event.target
--[x] reset form event cannot trigger applyDiscount function listening to the discountCode input event, bc the input event is not fired when JavaScript changes an element's value programmatically. Solved by adding a listener to form reset event, also defer the function to make sure value is reset.
+- [x] event target with icon can't work properly. Solved by removing pointer events inside clickable elements to preventing icons from becoming the event.target
+- [x] reset form event cannot trigger applyDiscount function listening to the discountCode input event, bc the input event is not fired when JavaScript changes an element's value programmatically. Solved by adding a listener to form reset event, also defer the function to make sure value is reset.
 
 ## for testing efficiency
--[x] Enabling HTTPS for Live Server on VSCod (certificates made with mkcert), to make autofill works on local service on Chrome
+- [x] Enabling HTTPS for Live Server on VSCod (certificates made with mkcert), to make autofill works on local service on Chrome

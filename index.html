@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG DONUT</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="index.css">
+    <!-- icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/Big_Donut_Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>BIG <br> DONUT</h1>
+            <h2>We only sell donuts!</h2>
+            <img class="header-img" src="./assets/images/Header_Donut.png" alt="An image of a chocolate donut.">
+        </header>
+        <main>
+            <nav class="categories">
+                <ul>
+                    <li class="categories-item active" data-categories="donuts">donuts</li>
+                    <li class="categories-item" data-categories="drinks">drinks</li>
+                    <li class="categories-item" data-categories="snacks">snacks</li>
+                    <li class="categories-item" data-categories="others">others</li>
+                </ul>
+            </nav>
+            <section class="menu" id="menu"></section>
+            <section class="button-container">
+                <button class="empty-btn" id="empty-btn-menu" aria-label="Empty cart" title="Empty cart">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+                <button class="cart-btn" id="cart-btn" aria-label="View cart modal" title="View cart modal">
+                    <i class="fa-solid fa-cart-shopping">
+                        <sup id="count">0</sup>
+                    </i>
+                    <span>Cart</span>
+                    <span id="subtotal">$ 0.00</span>
+                </button>
+            </section>
+            <div class="modal" id="modal">
+                <button class="modal-close-btn" id="close-modal-btn" aria-label="Close the modal and go back to menu." title="Close modal and go back to menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div id="modal-content"></div>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li class="footer-item" id="footer-client">Client</li>
+                <li class="footer-item" id="footer-orders">Orders</li>
+                <li class="footer-item" id="footer-discount">Discount</li>
+                <li class="footer-item" id="footer-hours">Hours</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
